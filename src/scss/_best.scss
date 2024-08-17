@@ -1,0 +1,215 @@
+.best {
+}
+.best__wrapper {
+  padding-top: 220px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 17px;
+  row-gap: 220px;
+}
+.best__item__intro {
+  display: flex;
+  flex-direction: column;
+}
+.best__item__intro--img {
+  transform: rotate(-25deg);
+}
+.best__item__intro--title {
+  font-weight: 800;
+  font-size: clamp(2.25rem, 1.971rem + 1.143vw, 3rem);
+  padding-top: 70px;
+  line-height: clamp(2.688rem, 2.339rem + 1.429vw, 3.625rem);
+  // line-height: 120%;
+  color: #000;
+}
+.best__item {
+  box-shadow: 0 4px 15px 0 rgba(16, 34, 61, 0.08);
+  background: #fff;
+  border-radius: 40px;
+  padding: 0px clamp(1rem, 0.629rem + 1.524vw, 2rem) 24px
+    clamp(1rem, 0.629rem + 1.524vw, 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // width: 380px;
+  height: 478px;
+}
+.best__item--image--star {
+  position: absolute;
+  left: 85%;
+  z-index: 1;
+  top: -160px;
+}
+.best__item--image--img {
+  position: absolute;
+  left: -95px;
+  top: -120px;
+  z-index: 2;
+}
+.best__item--image {
+  position: relative;
+  margin-left: 60px;
+  width: 50px;
+  height: 50px;
+}
+.best__item--title {
+  padding-top: 70px;
+  padding-bottom: 16px;
+}
+.best__item__benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-bottom: 35px;
+}
+.best__item__benefits--row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.best__item__benefits--line {
+  border-radius: 4px;
+  width: 16px;
+  height: 3px;
+  background: #fb28ff;
+}
+.best__item__benefits--text {
+  font-weight: 300;
+  font-size: clamp(0.875rem, 0.852rem + 0.095vw, 0.938rem);
+
+  line-height: clamp(1.063rem, 1.039rem + 0.095vw, 1.125rem);
+  // line-height: 120%;
+  color: #7a7a7a;
+}
+.best__item__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding-bottom: 27px;
+}
+.best__item__info--star {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.best__item__info--star--text {
+  font-weight: 800;
+  font-size: 36px;
+
+  line-height: 43px;
+  // line-height: 120%;
+  color: #000;
+}
+.best__item__info--star--img {
+}
+.best__item__info--compatibility {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.best__item__info--compatibility--text {
+  font-weight: 300;
+  font-size: 14px;
+
+  line-height: 17px;
+  // line-height: 120%;
+  color: #7a7a7a;
+}
+.best__item__info--compatibility--imgs {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.best__item__info--buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.best__item__info--button {
+  border-radius: 100px;
+  padding: 14px 32px;
+  background: #ffa800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(18.5rem, 18.036rem + 1.905vw, 19.75rem);
+  font-weight: 800;
+  font-size: clamp(1rem, 0.907rem + 0.381vw, 1.25rem);
+  margin-bottom: 8px;
+  line-height: clamp(1.188rem, 1.071rem + 0.476vw, 1.5rem);
+  // line-height: 120%;
+  color: #fff;
+  // height: 52px;
+}
+.best__item__info--buttons--site {
+  border-radius: 100px;
+  width: clamp(18.5rem, 18.036rem + 1.905vw, 19.75rem);
+  padding: 8px 0px;
+  background: #f7f7f7;
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 17px;
+  // line-height: 120%;
+  text-align: center;
+  color: #7a7a7a;
+  // height: 33px;
+}
+@media screen and (max-width: 1200px) {
+  .best__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .best__item__intro {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .best__wrapper {
+    padding-top: 80px;
+    display: flex;
+    gap: clamp(4.375rem, 2.44rem + 7.937vw, 6.25rem);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .best__item__intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+  .best__item__intro--title {
+    padding-top: 0;
+  }
+  .best__item--image--img {
+    left: -82px;
+    top: -53px;
+    width: 188px;
+  }
+  .best__item--image--star {
+    width: 120px;
+    height: 120px;
+    left: 99%;
+    z-index: 1;
+    top: -65px;
+  }
+  .best__item__intro {
+    margin: 0;
+    width: 100%;
+  }
+  .best__item__intro--img {
+    width: 120px;
+    height: 120px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

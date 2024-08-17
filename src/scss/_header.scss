@@ -1,0 +1,41 @@
+.navbar {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+.logo--image {
+}
+.logo--text {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.563rem, 0.491rem + 2.232vw, 2.5rem);
+}
+.menu__item {
+}
+.menu__item-link {
+  font-weight: 600;
+  font-size: 18px;
+
+  line-height: 22px;
+  // line-height: 120%;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
