@@ -13,6 +13,7 @@
 .best__item__intro {
   display: flex;
   flex-direction: column;
+  transform: translateY(-255px);
 }
 .best__item__intro--img {
   transform: rotate(-25deg);
@@ -182,7 +183,8 @@
   .best__item__intro {
     display: flex;
     flex-direction: row;
-    // align-items: center;
+    align-items: center;
+
     gap: 30px;
   }
   .best__item__intro--title {
